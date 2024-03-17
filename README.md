@@ -1,4 +1,4 @@
-##Personal_portfolio/resume/integrated CV
+## Personal Responsive Portfolio / Intergrated
 
 # Main information
 
