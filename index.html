@@ -174,6 +174,44 @@
     <!-- portfolio section ends -->
 
     <!-- contact section starts  -->
+    <style>
+        .message {
+            padding: 50px 0; /* Add padding around the section */
+        }
+    
+        .container {
+        max-width: 70%; /* Limit the maximum width of the container */
+        margin: 0 auto; /* Center the container horizontally */
+        padding: 10px; /* Add padding to the sides */
+        display: flex; /* Use flexbox to align items */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+    
+        .row {
+            width: 100%; /* Ensure the row takes full width */
+            max-width: 800px; /* Limit the maximum width of the row */
+        }
+    
+        .col-md-6 {
+            flex: 1; /* Make columns take equal width */
+        }
+    
+        .image {
+            max-width: 100%; /* Ensure the image doesn't overflow its container */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 20px; /* Add margin to separate image and form */
+        }
+    
+        .buttons {
+            text-align: center; /* Center the buttons horizontally */
+        }
+    
+        .buttons button {
+            margin-right: 10px; /* Add margin between buttons */
+        }
+    </style>
+    
     <section class="message" id="contact">
         <div class="container">
             <div class="contact-title">
@@ -184,27 +222,49 @@
                     <div class="image">
                         <img src="email.jpg" alt="Email Image">
                     </div>
+                    <style>
+                        .buttons {
+                            display: flex;
+                            justify-content: space-between;
+                            margin-top: 20px; /* Adjust margin as needed */
+                        }
+                    
+                        .buttons button {
+                            flex: 1; /* Each button takes up equal space */
+                            margin: 0 5px; /* Adjust margin between buttons as needed */
+                            padding: 10px; /* Adjust padding as needed */
+                            font-size: 16px; /* Adjust font size as needed */
+                            cursor: pointer;
+                            border: none;
+                            background-color: #007bff; /* Button color */
+                            color: #fff;
+                            border-radius: 5px;
+                            transition: background-color 0.3s ease;
+                        }
+                    
+                        .buttons button:hover {
+                        background-color: #28a745; /* Green color on hover */
+                   }
+                    </style>
+                    <div class="buttons">
+                        <button onclick="location.href='mailto:kiprotichgideonbett@gmail.com'">Contact Via Email</button>
+                        <button onclick="location.href='tel:+254790729721'">Contact Via a Call</button>
+                        <button onclick="location.href='sms:+254790729721'">Send  An  SMS</button>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <form action="">
-                        <input type="text" placeholder="Your name" class="box" name="name">
-                        <input type="email" placeholder="Your email" class="box" name="email">
-                        <input type="number" placeholder="Your number" class="box" name="number">
-                        <textarea name="message" id="" cols="30" rows="5" class="box address" placeholder="Your comments"></textarea>
-                        <div class="buttons">
-                            <button onclick="location.href='mailto:kiprotichgideonbett@gmail.com'">Contact Via Email</button>
-                            <button onclick="location.href='tel:+254790729721'">Contact Via a Call</button>
-                            <button onclick="location.href='sms:+254790729721'">Send An SMS</button>
-                        </div>
-                    </form>
+                
+                       
+                    
                 </div>
             </div>
         </div>
     </section>
     
+    </section>
+    
     <style>
         .footer {
-            background: #CED0E8;
+            background: #010211;
             padding: 0 10%;
         }
     
@@ -272,9 +332,11 @@
         <div class="box-container">
             <div class="box">
                 <h3>Gideon Bett Fullstack Web developer</h3>
-               <strong> <p>Programming is the closest thing we have to magic in the digital world. </p></strong>
+                <strong><p style="color: white;">Programming is the closest thing we have to magic in the digital world.</p></strong>
+
                 <div class="fb">
                     <a href="https://www.linkedin.com/in/kiprotich-gideon-bett-b63478242/"><i class='bx bxl-linkedin-square' style='color: #0077B5'></i></a>
+                    <a href="https://twitter.com/gidcomtechs90"><i class='bx bxl-twitter' style='color: #1DA1F2'></i></a>
                     <a href="https://www.instagram.com/gidcomtechnologies/"><i class='bx bxl-instagram' style='color: #E4405F'></i></a>
                     <a href="https://github.com/Bettgideon"><i class='bx bxl-github' style='color: #6CC644'></i></a>
                     <a href="https://www.facebook.com/gideon.bett.7967747/"><i class='bx bxl-facebook' style='color: #1877F2'></i></a>
@@ -282,7 +344,7 @@
                 </div>
             </div>
         </div>
-        <p class="credit"> <strong>Designed by  Gideon Bett 2024<br> <span>&copy;  All rights reserved. </span></strong></p>
+        <p style="color: white;"class="credit"> <strong>Designed by  Gideon Bett<br> <span>&copy;  2024 All rights reserved. </span></strong></p>
     </div>
     <!-- footer section ends -->
     
