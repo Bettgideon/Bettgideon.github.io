@@ -1,4 +1,4 @@
-## Personal Responsive Portfolio / Intergrated
+# Personal Responsive Portfolio / Intergrated
 
 # Main information
 
