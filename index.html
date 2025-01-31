@@ -39,7 +39,7 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact me</a></li>
-                <li><a href="Gideon Bett CV.pdf">Download CV</a></li>
+                <li><a href="Gideon Bett Main CV.pdf">Download CV</a></li>
             </ul>
             </ul>
         </nav>
@@ -52,7 +52,7 @@
     <section class="home" id="home">
         <div class="content">
             <div>
-                <div class="text-1">Hello, My Name is</div>
+                <div class="text-1">Hello, I'm</div>
                 <div class="text-2">Gideon Bett</div>
                 <div class="text-3">And I'm a <span class="animated-text"></span><span class="cursor">_</span></div> <a
                     href="#contact"><button class="btn" data-aos="fade-right" data-aos-duration="3000"
@@ -74,7 +74,7 @@
         <div class="content">
             <h3>About</h3>
             <p data-aos="fade-left" data-aos-duration="1500" data-aos-delay="500">My name is Gideon and I'm a Fullstack Web
-                developer from Maseno, Kisumu. </p>
+                developer from Maseno, Kisumu , Kenya. </p>
             <p data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1000">My many years of experience in
                  graphic design allows me to create high-quality, responsive and beautiful websites and
                 applications I also develop softwares eg. Management Systems. I'm a highly motivated person with a passion for the development Front-End & Backend. I enjoy
@@ -286,11 +286,55 @@
                         .buttons button:hover {
                             background-color: #28a745; /* Green color on hover */
                         }
+                        /* Fixed Donate Button */
+/* Styles for the fixed donate button container */
+#donate-button-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+/* Rectangular Donate Button with Green Background */
+#donate-button {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #28a745; /* Green background */
+    color: white; /* Ensure text/icons are visible */
+    padding: 5px 10px; /* Adjust padding for a rectangular shape */
+    border-radius: 5px; /* Slightly rounded corners */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
                     </style>
-                    <div class="buttons">
-                        <button onclick="location.href='mailto:kiprotichgideonbett@gmail.com'">Contact Via Email</button>
-                        <button onclick="location.href='tel:+254790729721'">Contact Via a Call</button>
-                        <button onclick="location.href='sms:+254790729721'">Send  An  SMS</button>
+                   <div class="buttons">
+                    <button onclick="location.href='mailto:kiprotichgideonbett@gmail.com'">Contact Via Email</button>
+                    <button onclick="location.href='tel:+254790729721'">Contact Via a Call</button>
+                    <button onclick="location.href='sms:+254790729721'">Send An SMS</button>
+                </div>
+                
+                <!-- PayPal Donation Button -->
+                <div id="donate-button-container">
+                    <div id="donate-button"></div>
+                </div>
+                
+                <!-- PayPal Script -->
+                <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+                <script>
+                    PayPal.Donation.Button({
+                        env: 'production',
+                        hosted_button_id: 'AJJ6Q69QPU6WA',
+                        image: {
+                            src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
+                            alt: 'Donate with PayPal button',
+                            title: 'PayPal - The safer, easier way to pay online!'
+                        }
+                    }).render('#donate-button');
+                </script>
+                
+                
+                        
                     </div>
                 </div>
                 
@@ -385,7 +429,16 @@
                 </div>
             </div>
         </div>
-        <p style="color: white;"class="credit"> <strong>Designed by  Gideon Bett<br> <span>&copy;  2024 All rights reserved. </span></strong></p>
+        <p style="color: white;" class="credit">
+            <strong>Designed by Gideon Bett<br> 
+              <span>&copy; <span id="year"></span> All rights reserved.</span>
+            </strong>
+          </p>
+          
+          <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+          </script>
+          
     </div>
     <!-- footer section ends -->
     
