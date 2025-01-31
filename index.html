@@ -180,13 +180,15 @@
         }
     
         .container {
-        max-width: 70%; /* Limit the maximum width of the container */
-        margin: 0 auto; /* Center the container horizontally */
-        padding: 10px; /* Add padding to the sides */
-        display: flex; /* Use flexbox to align items */
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items horizontally */
-    }
+    width: auto; /* Allow width to be based on content */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 10px; /* Add padding to the sides */
+    display: flex; /* Use flexbox to align items */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    max-width: fit-content; /* Ensures container doesn't exceed content width */
+}
+
     
         .row {
             width: 100%; /* Ensure the row takes full width */
@@ -228,13 +230,15 @@
                         }
                     
                         .container {
-                            max-width: 70%; /* Limit the maximum width of the container */
-                            margin: 0 auto; /* Center the container horizontally */
-                            padding: 10px; /* Add padding to the sides */
-                            display: flex; /* Use flexbox to align items */
-                            flex-direction: column; /* Stack items vertically */
-                            align-items: center; /* Center items horizontally */
-                        }
+    width: auto; /* Allow the width to be determined by content */
+    max-width: fit-content; /* Prevent the container from exceeding the content width */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 10px; /* Add padding to the sides */
+    display: flex; /* Use flexbox to align items */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
                     
                         .row {
                             width: 100%; /* Ensure the row takes full width */
@@ -291,7 +295,7 @@
 #donate-button-container {
     position: bottom;
     bottom: 0px;
-    right: 10px;
+    right: 0px;
     z-index: 1000; /* Ensure it stays on top of other content */
 }
 
