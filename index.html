@@ -131,45 +131,190 @@
     </section>
 
     <!-- services section ends -->
+<!-- Portfolio Section -->
+<section class="portfolio-container" id="portfolio">
+    <div class="name">
+        <h3 class="heading">Portfolio</h3>
+    </div>
 
-    <!-- portfolio section start -->
+    <!-- Category Filters -->
+    <div id="myBtnContainer">
+        <div class="category-title" id="html">HTML | CSS | BOOTSTRAP</div>
+        <div class="category-title" id="js">JavaScript | PHP</div>
+        <div class="category-title" id="react">React</div>
+        
+    </div>
 
-
-    <section class="container" id="portfolio">
-        <div class="name">
-            <h3 class="heading"> Portfolio</h3>
-        </div>
-
-        <div id="myBtnContainer">
-            <div class="category-title" id="html"> HTML|CSS|BOOTSTRAP</div>
-            <div class="category-title" id="js"> JavaScript | PHP</div>
-            <div class="category-title" id="react"> React</div>
-            <div class="category-title active" id="all"> Show all</div>
-
-        </div>
-
-        <div class="image-container">
-
-            <div class="projects_card html all">
-                <div class="image"><img src="15.jpg" alt="">
-                    <div class="projects__modal">
-                        <div>
-                            <p class="projects__subtitle">MIWI Developers</p>
-                            <h4 class="projects__title">HTML5/CSS3/PHP</h4>
-                            <div class="link"> <a href="http://localhost/emergency/dashboard.php" class="button__small"> <i
-                                        class='bx bx-link'></i>View demo here </a> </div>
+    <!-- Project Cards -->
+    <div class="image-container">
+        <div class="projects_card html all">
+            <div class="image">
+                <img src="15.jpg" alt="Project Preview">
+                <div class="projects__modal">
+                    <div class="projects__content">
+                        <p class="projects__subtitle">MIWI Developers</p>
+                        <h4 class="projects__title">HTML5 / CSS3 / PHP</h4>
+                        <div class="link">
+                            <a href="http://localhost/emergency/dashboard.php" class="button__small">
+                                <i class='bx bx-link'></i> View demo
+                            </a>
                         </div>
-                        <div>
-                            <p class="projects__subtitle">Hotel Management Information System</p>
-                            <h4 class="projects__title">HTML5/CSS3/PHP</h4>
-                            <div class="link"> <a href="http://localhost/hotel_management/admin/dashboard.php" class="button__small"> <i
-                                        class='bx bx-link'></i>View demo here </a> </div>
+                    </div>
+                    <div class="projects__content">
+                        <p class="projects__subtitle">Hotel Management System</p>
+                        <h4 class="projects__title">HTML5 / CSS3 / PHP</h4>
+                        <div class="link">
+                            <a href="http://localhost/hotel_management/admin/dashboard.php" class="button__small">
+                                <i class='bx bx-link'></i> View demo
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
 
-    </section>
+<!-- Styles -->
+<style>
+    /* Portfolio Section */
+    .portfolio-container {
+        text-align: center;
+        padding: 60px 20px;
+        background-color: #f8f9fa;
+    }
+
+    /* Portfolio Heading */
+    .heading {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        color: #333;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+    }
+
+    /* Category Filters */
+    #myBtnContainer {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    .category-title {
+        background: #ddd;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        font-weight: bold;
+    }
+
+    .category-title:hover, .category-title.active {
+        background: #007bff;
+        color: #fff;
+    }
+
+    /* Image Container */
+    .image-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    /* Project Card */
+    .projects_card {
+        background: #fff;
+        border-radius: 10px;
+        padding: 15px;
+        width: 350px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .projects_card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Image Styling */
+    .image {
+        position: relative;
+    }
+
+    .image img {
+        width: 100%;
+        border-radius: 10px;
+        transition: opacity 0.3s ease;
+    }
+
+
+    /* Project Modal */
+    .projects__modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .image:hover .projects__modal {
+        opacity: 1;
+    }
+
+    /* Project Title & Link */
+    .projects__subtitle {
+        font-size: 16px;
+        font-weight: bold;
+        color: #007bff;
+    }
+
+    .projects__title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #222;
+        margin-bottom: 10px;
+    }
+
+    .link .button__small {
+        display: inline-block;
+        background: #007bff;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 14px;
+        transition: background 0.3s ease;
+    }
+
+    .link .button__small:hover {
+        background: #0056b3;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        #myBtnContainer {
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .category-title {
+            padding: 8px 12px;
+            font-size: 14px;
+        }
+
+        .projects_card {
+            width: 90%;
+        }
+    }
+</style>
 
     <!-- portfolio section ends -->
 
