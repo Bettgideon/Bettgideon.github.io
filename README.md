@@ -1,4 +1,4 @@
-## Personal Responsive Portfolio / Intergrated
+# Personal Responsive Portfolio / Intergrated
 
 # Main information
 
@@ -23,4 +23,3 @@ This portfolio is live at (https://bettgideon-github-io.vercel.app/)
 ### Web & Graphic Design: 
 
 - Adobe Photoshop | Adobe Illustrator | Adobe InDesign | Adobe Lightroom | Microsoft Publisher
-
