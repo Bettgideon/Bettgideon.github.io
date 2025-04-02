@@ -334,19 +334,34 @@
                 <a href="GIDEON KIPROTICH BETT CV.pdf" class="btn">Download CV</a>
             </div>
             
-            <!-- Contact Form -->
-<form action="contact.php" method="POST" class="contact-form" data-aos="fade-left">
+          <!-- Contact Form -->
+<form onsubmit="sendEmail(); return false;" class="contact-form" data-aos="fade-left">
     <div class="input-box">
-        <input type="text" name="full_name" placeholder="Full Name" required>
-        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="text" id="full_name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email Address" required>
     </div>
     <div class="input-box">
-        <input type="tel" name="phone" placeholder="Phone Number">
-        <input type="text" name="subject" placeholder="Email Subject">
+        <input type="tel" id="phone" placeholder="Phone Number">
+        <input type="text" id="subject" placeholder="Email Subject">
     </div>
-    <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+    <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
     <button type="submit" class="btn">Send Message</button>
 </form>
+
+<script>
+function sendEmail() {
+    let name = document.getElementById("full_name").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+    let subject = document.getElementById("subject").value;
+    let message = document.getElementById("message").value;
+
+    let mailtoLink = `mailto:kiprotichgideonbett@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("Name: " + name + "\nEmail: " + email + "\nPhone: " + phone + "\n\nMessage:\n" + message)}`;
+
+    window.location.href = mailtoLink;
+}
+</script>
+
 
         </div>
     </section>
