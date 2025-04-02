@@ -163,9 +163,9 @@
                     <h4>Emergency Response System</h4>
                     <p>System for managing emergency cases, response teams, and real-time tracking of incidents.</p>
                     <div class="tech-used">
-                        <span>React</span>
+                        <span>PHP</span>
                         <span>Node.js</span>
-                        <span>MongoDB</span>
+                        <span>MySQL</span>
                     </div>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
@@ -177,9 +177,9 @@
                     <h4>Smart Agriculture</h4>
                     <p>IoT-based solution for monitoring farm conditions and automating irrigation systems.</p>
                     <div class="tech-used">
-                        <span>Python</span>
-                        <span>Raspberry Pi</span>
-                        <span>IoT</span>
+                        <span>PHP</span>
+                        <span>Laravel</span>
+                        <span>JavaScript</span>
                     </div>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
@@ -192,7 +192,7 @@
                     <p>E-commerce platform connecting farmers directly with consumers for fresh produce.</p>
                     <div class="tech-used">
                         <span>Laravel</span>
-                        <span>Vue.js</span>
+                        <span>JavaScript</span>
                         <span>MySQL</span>
                     </div>
                     <a href="#"><i class='bx bx-link-external'></i></a>
@@ -255,7 +255,7 @@
                     </div>
                 </div>
                 <div class="skill">
-                    <p>Python</p>
+                    <p>Laravel</p>
                     <div class="skill-bar">
                         <div class="skill-level python">65%</div>
                     </div>
@@ -277,7 +277,7 @@
                     </div>
                 </div>
                 <div class="skill">
-                    <p>Figma</p>
+                    <p>Canva</p>
                     <div class="skill-bar">
                         <div class="skill-level figma">70%</div>
                     </div>
@@ -321,28 +321,33 @@
                     </div>
                 </div>
                 
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/kiprotich-gideon-bett-b63478242/"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/Bettgideon"><i class='bx bxl-github'></i></a>
-                    <a href="https://twitter.com/gidcomtechs90"><i class='bx bxl-twitter'></i></a>
-                    <a href="https://wa.me/254790729721"><i class='bx bxl-whatsapp'></i></a>
-                </div>
+                <!-- Social Links -->
+<div class="social-links">
+    <a href="https://www.linkedin.com/in/kiprotich-gideon-bett-b63478242/"><i class='bx bxl-linkedin'></i></a>
+    <a href="https://github.com/Bettgideon"><i class='bx bxl-github'></i></a>
+    <a href="https://twitter.com/gidcomtechs90"><i class='bx bxl-twitter'></i></a>
+    <a href="https://wa.me/254790729721"><i class='bx bxl-whatsapp'></i></a>
+    <a href="https://web.facebook.com/gideon.bett.7967747"><i class='bx bxl-facebook'></i></a> <!-- Facebook Link Added -->
+</div>
+
                 
                 <a href="GIDEON KIPROTICH BETT CV.pdf" class="btn">Download CV</a>
             </div>
             
-            <form action="#" class="contact-form" data-aos="fade-left">
-                <div class="input-box">
-                    <input type="text" placeholder="Full Name" required>
-                    <input type="email" placeholder="Email Address" required>
-                </div>
-                <div class="input-box">
-                    <input type="tel" placeholder="Phone Number">
-                    <input type="text" placeholder="Email Subject">
-                </div>
-                <textarea cols="30" rows="10" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
+            <!-- Contact Form -->
+<form action="contact.php" method="POST" class="contact-form" data-aos="fade-left">
+    <div class="input-box">
+        <input type="text" name="full_name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+    </div>
+    <div class="input-box">
+        <input type="tel" name="phone" placeholder="Phone Number">
+        <input type="text" name="subject" placeholder="Email Subject">
+    </div>
+    <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+</form>
+
         </div>
     </section>
 <!-- Add to HTML -->
@@ -363,15 +368,16 @@
     <i class="bx bx-message-square-dots"></i>
   </button>
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; <span id="year"></span> by Gideon Bett | All Rights Reserved.</p>
-        </div>
-        
-        <div class="footer-iconTop">
-            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-        </div>
-    </footer>
+<footer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy; <span id="year"></span> by Gideon Bett | All Rights Reserved.</p>
+    </div>
+
+    <div class="footer-iconTop">
+        <a href="#home" aria-label="Back to top"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+</footer>
+
 
     <!-- Scripts -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
