@@ -1,25 +1,31 @@
-# Personal Responsive Portfolio / Intergrated
+# Personal Responsive Portfolio / Integrated
 
-# Main information
+## Main Information
 
+My name is **Gideon Bett**, and I'm a **Fullstack Web Developer  , Cybersecurity enthusiast** and an **ICT Consultant** from Maseno, Kisumu, Kenya. With over 4 years of experience in web development and cybersecurity, I create high-quality, responsive websites and applications. My expertise spans both frontend and backend development, network security, and cybersecurity operations.
 
-My name is Gideon Bett and I'm a Frontend Web developer from Maseno, Kisumu.
-My many years of experience in  graphic design allows me to create high-quality, responsive and beautiful websites and applications.\
-I'm a highly motivated person with a passion for the development Front-End. I enjoy bringing static designs to life by creating dynamic, lively and responsive renders that I am proud of.\
-You can check out on me on linkedin and see more web projects on my Github profile.\
-And I'm currently improving my skills in MERN stack.
+I'm highly motivated with a passion for development, especially in the **Frontend**. I enjoy bringing static designs to life by creating dynamic, lively, and responsive websites. 
 
-I design and develop experience that make people's lives simple.
-This portfolio is live at (https://bettgideon-github-io.vercel.app/)
+You can check out more of my work on **[LinkedIn](https://www.linkedin.com/in/kiprotich-gideon-bett-b63478242/)** and explore my **[GitHub](https://github.com/Bettgideon)** profile for various web projects. I'm currently enhancing my skills in the **MERN stack**.
 
-##  My technical skills: 
+I design and develop experiences that make people's lives simpler.  
+This portfolio is live at [**https://bettgideon-github-io.vercel.app/**](https://bettgideon-github-io.vercel.app/)
+
+## My Technical Skills:
 
 ### Front-End Development:
-- Html5 | CSS3 | Styled Components | PHP | Bootstrap5 | JavaScript 
+- **HTML5** | **CSS3** | **Styled Components** | **PHP** | **Bootstrap5** | **JavaScript** | **React.js**
 
 ### Backend Development:
-- Node.js | Express.js | MongoDB | PHP
+- **Node.js** | **Express.js** | **MongoDB** | **PHP**
 
-### Web & Graphic Design: 
+### Web & Graphic Design:
+- **Adobe Photoshop** | **Adobe Illustrator** | **Adobe InDesign** | **Adobe Lightroom** | **Microsoft Publisher**
 
-- Adobe Photoshop | Adobe Illustrator | Adobe InDesign | Adobe Lightroom | Microsoft Publisher
+### Cybersecurity & Network Solutions:
+- **Network Security Assessments** | **Vulnerability Testing** | **Security Operations**
+
+---
+
+Feel free to get in touch with me for freelance opportunities, collaborations, or if you just want to talk tech!
+
