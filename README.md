@@ -9,7 +9,7 @@ I'm highly motivated with a passion for development, especially in the **Fronten
 You can check out more of my work on **[LinkedIn](https://www.linkedin.com/in/kiprotich-gideon-bett-b63478242/)** and explore my **[GitHub](https://github.com/Bettgideon)** profile for various web projects. I'm currently enhancing my skills in the **MERN stack**.
 
 I design and develop experiences that make people's lives simpler.  
-This portfolio is live at [**https://bettgideon-github-io.vercel.app/**](https://bettgideon-github-io.vercel.app/)
+This portfolio is live at [**https://bettgideon-github-io.vercel.app/**](https://bettgideon-github-io.vercel.app)
 
 ## My Technical Skills:
 
