@@ -355,10 +355,12 @@ section {
 /* Portfolio Section */
 .portfolio {
     background: var(--light-bg);
+    padding: 5rem 9% 2rem;
 }
 
 .portfolio h2 {
     margin-bottom: 4rem;
+    text-align: center;
 }
 
 .portfolio-container {
@@ -370,22 +372,23 @@ section {
 .portfolio-box {
     position: relative;
     border-radius: 2rem;
-    box-shadow: 0 0 1rem var(--dark-bg);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
     overflow: hidden;
     display: flex;
-    transition: var(--transition);
+    transition: all 0.3s ease;
+    aspect-ratio: 16/10;
 }
 
 .portfolio-box:hover {
-    transform: scale(1.03);
-    box-shadow: var(--shadow);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(0, 171, 240, 0.3);
 }
 
 .portfolio-box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: var(--transition);
+    transition: transform 0.5s ease;
 }
 
 .portfolio-box:hover img {
@@ -398,15 +401,15 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), var(--primary-color));
+    background: linear-gradient(rgba(0, 0, 0, 0.3), var(--primary-color));
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 0 4rem;
+    padding: 2rem;
     transform: translateY(100%);
-    transition: var(--transition);
+    transition: transform 0.5s ease;
 }
 
 .portfolio-box:hover .portfolio-layer {
@@ -414,30 +417,38 @@ section {
 }
 
 .portfolio-layer h4 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin-bottom: 1rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .portfolio-layer p {
-    font-size: 1.4rem;
-    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: #f0f0f0;
+    line-height: 1.5;
 }
 
 .tech-used {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.5rem;
-    margin-bottom: 1.5rem;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
 }
 
 .tech-used span {
     font-size: 1.2rem;
-    padding: 0.5rem 1rem;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 0.5rem;
+    padding: 0.5rem 1.2rem;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 3rem;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
 }
 
+/* Original link style (kept for existing projects) */
 .portfolio-layer a {
     display: inline-flex;
     justify-content: center;
@@ -446,13 +457,292 @@ section {
     height: 5rem;
     background: var(--text-color);
     border-radius: 50%;
+    transition: all 0.3s ease;
 }
 
 .portfolio-layer a i {
     font-size: 2rem;
     color: var(--secondary-color);
+    transition: all 0.3s ease;
 }
 
+.portfolio-layer a:hover {
+    background: var(--primary-color);
+    transform: rotate(360deg);
+}
+
+.portfolio-layer a:hover i {
+    color: var(--text-color);
+}
+
+/* GmanTech Specific Styles */
+.offer-badge {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: #ff6b6b;
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border-radius: 3rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    z-index: 10;
+    animation: pulse 2s infinite;
+    box-shadow: 0 0 20px rgba(255, 107, 107, 0.5);
+    border: 2px solid white;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.trust-badge {
+    margin-top: 1rem;
+    color: #00abf0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 0.6rem 1.5rem;
+    border-radius: 3rem;
+    border: 1px solid #00abf0;
+    backdrop-filter: blur(5px);
+    color: white;
+}
+
+.trust-badge i {
+    font-size: 1.4rem;
+    color: #00abf0;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.live-preview, .details-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    width: auto;
+    height: auto;
+    border: none;
+    cursor: pointer;
+}
+
+.live-preview {
+    background: #00abf0;
+    color: white;
+}
+
+.live-preview i {
+    font-size: 1.4rem;
+    color: white;
+}
+
+.live-preview:hover {
+    background: #0088c7;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 171, 240, 0.5);
+}
+
+.details-btn {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.details-btn i {
+    font-size: 1.4rem;
+    color: white;
+}
+
+.details-btn:hover {
+    background: white;
+    color: var(--dark-bg);
+}
+
+.details-btn:hover i {
+    color: var(--dark-bg);
+}
+
+/* Project status badges */
+.project-status {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border-radius: 3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    z-index: 10;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid white;
+}
+
+.project-status.coming-soon {
+    background: #ff6b6b;
+}
+
+.project-status.in-dev {
+    background: #ffa500;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .portfolio-container {
+        grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    }
+}
+
+@media (max-width: 991px) {
+    .portfolio {
+        padding: 3rem 3% 2rem;
+    }
+    
+    .portfolio-layer h4 {
+        font-size: 2rem;
+    }
+    
+    .portfolio-layer p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .portfolio-layer {
+        padding: 1.5rem;
+    }
+    
+    .portfolio-layer h4 {
+        font-size: 1.8rem;
+    }
+    
+    .portfolio-layer p {
+        font-size: 1.1rem;
+    }
+    
+    .tech-used span {
+        font-size: 1rem;
+        padding: 0.4rem 1rem;
+    }
+    
+    .offer-badge {
+        font-size: 1.1rem;
+        padding: 0.5rem 1.2rem;
+        top: 1rem;
+        right: 1rem;
+    }
+    
+    .project-status {
+        font-size: 1.1rem;
+        padding: 0.5rem 1.2rem;
+        top: 1rem;
+        left: 1rem;
+    }
+    
+    .trust-badge {
+        font-size: 1rem;
+        padding: 0.5rem 1.2rem;
+    }
+    
+    .live-preview, .details-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .portfolio-layer {
+        padding: 1rem;
+    }
+    
+    .portfolio-layer h4 {
+        font-size: 1.5rem;
+    }
+    
+    .portfolio-layer p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .tech-used {
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .tech-used span {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.8rem;
+    }
+    
+    .project-links {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .live-preview, .details-btn {
+        width: 100%;
+    }
+    
+    .portfolio-layer a {
+        width: 4rem;
+        height: 4rem;
+    }
+    
+    .portfolio-layer a i {
+        font-size: 1.6rem;
+    }
+    
+    .offer-badge {
+        font-size: 1rem;
+        padding: 0.4rem 1rem;
+    }
+    
+    .project-status {
+        font-size: 1rem;
+        padding: 0.4rem 1rem;
+    }
+}
+
+/* Animation for hover effects */
+@keyframes glow {
+    0% { box-shadow: 0 0 5px #00abf0; }
+    50% { box-shadow: 0 0 25px #00abf0; }
+    100% { box-shadow: 0 0 5px #00abf0; }
+}
+
+.portfolio-box:hover .live-preview:not(.disabled) {
+    animation: glow 1.5s infinite;
+}
+
+/* Make sure all elements are visible on hover */
+.portfolio-box:hover .offer-badge,
+.portfolio-box:hover .project-status {
+    z-index: 20;
+}
 /* === SKILLS === */
 .skills {
   padding: 4rem 2rem;

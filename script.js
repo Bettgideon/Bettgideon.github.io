@@ -60,7 +60,7 @@ document.addEventListener('keydown', (e) => {
 // TYPING ANIMATION
 // ======================
 const typed = new Typed('.animated-text', {
-    strings: ['Fullstack Developer', 'Web Designer', 'Graphic Designer', 'ICT Consultant'],
+    strings: ['Fullstack Developer', 'Web Designer & UI/UX Designer ', 'Graphic Designer', 'ICT Consultant'],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
