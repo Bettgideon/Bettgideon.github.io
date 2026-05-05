@@ -3,7 +3,7 @@
 ## Main Information
 
 
-My name is **Gideon Bett**, and I'm a **Fullstack Web Developer  , Cybersecurity enthusiast** and an **ICT Consultant** from Maseno, Kisumu, Kenya. With over 4 years of experience in web development and cybersecurity, I create high-quality, responsive websites and applications. My expertise spans both frontend and backend development, network security, and cybersecurity operations.
+My name is **Gideon Bett**, and I'm a **Fullstack Developer  , Cybersecurity enthusiast** and an **ICT Consultant** from Maseno, Kisumu, Kenya. With over 4 years of experience in web development and cybersecurity, I create high-quality, responsive websites and applications. My expertise spans both frontend and backend development, network security, and cybersecurity operations.
 
 I'm highly motivated with a passion for development, especially in the **Frontend**. I enjoy bringing static designs to life by creating dynamic, lively, and responsive websites. 
 
